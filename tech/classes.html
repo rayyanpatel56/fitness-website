@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Classes — PulseFit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">PulseFit</a>
+      <nav class="main-nav" id="mainNavClasses">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="classes.html" class="active">Classes</a>
+        <a href="trainers.html">Trainers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggleClasses" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-hero small">
+      <div class="container">
+        <h1>Classes & Schedule</h1>
+        <p>Find a class that fits your vibe — strength, cardio, mobility, or recovery.</p>
+      </div>
+    </section>
+
+    <section class="section class-filters">
+      <div class="container">
+        <div class="filters-row">
+          <label>Filter:
+            <select id="classFilter">
+              <option value="all">All</option>
+              <option value="hiit">HIIT</option>
+              <option value="spin">Spin</option>
+              <option value="yoga">Yoga</option>
+              <option value="strength">Strength</option>
+            </select>
+          </label>
+          <div class="legend">Tap a class to reserve: <span class="dot hiit"></span> HIIT <span class="dot spin"></span> Spin</div>
+        </div>
+
+        <div class="classes-grid" id="classesGrid">
+          <!-- class items -->
+          <article class="class-item" data-type="hiit">
+            <h4>HIIT Blast</h4>
+            <p>Mon/Wed/Fri — 07:00 • 18:00</p>
+            <p>Duration: 30 min</p>
+            <a class="btn small" href="contact.html">Reserve</a>
+          </article>
+
+          <article class="class-item" data-type="spin">
+            <h4>Spin Enduro</h4>
+            <p>Tue/Thu — 06:30 • 19:00</p>
+            <p>Duration: 45 min</p>
+            <a class="btn small" href="contact.html">Reserve</a>
+          </article>
+
+          <article class="class-item" data-type="yoga">
+            <h4>Stretch & Recover</h4>
+            <p>Daily — 08:00 • 20:00</p>
+            <p>Duration: 45 min</p>
+            <a class="btn small" href="contact.html">Reserve</a>
+          </article>
+
+          <article class="class-item" data-type="strength">
+            <h4>Strength Lab</h4>
+            <p>Mon/Wed/Fri — 18:30</p>
+            <p>Duration: 60 min</p>
+            <a class="btn small" href="contact.html">Reserve</a>
+          </article>
+
+          <article class="class-item" data-type="hiit">
+            <h4>Express HIIT</h4>
+            <p>Sat — 09:00</p>
+            <p>Duration: 20 min</p>
+            <a class="btn small" href="contact.html">Reserve</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html">PulseFit</a>
+        <p>Modern training. Real results.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="classes.html">Classes</a>
+        <a href="trainers.html">Trainers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-info">
+        <p>Mon–Sun: 5:00 — 23:00</p>
+        <p>Karachi, Pakistan</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="yearClasses"></span> PulseFit Gym</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
